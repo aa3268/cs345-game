@@ -10,7 +10,10 @@ public class Teleport : MonoBehaviour {
 	// Update is called once per frame
 	void OnCollisionEnter (Collision col) 
 	{
-		GameObject clone = Instantiate (projectilePrefab, ShotSpawn.position, ShotSpawn.rotation) as GameObject;
+		if (col.gameObject.name == "Entrance")
+		{
+			GameObject clone = Instantiate (projectilePrefab, ShotSpawn.position, ShotSpawn.rotation) as GameObject;
+		}
 	}
 }
 
