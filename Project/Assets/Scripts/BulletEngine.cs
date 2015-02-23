@@ -19,8 +19,12 @@ public class BulletEngine : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision col)
 	{
-			Destroy (col.gameObject);
-			Destroy(gameObject);
+		if (col.gameObject.tag == "Asteroids" || col.gameObject.tag == "Entrance")
+		{
+			Destroy (col.gameObject.transform.parent);
+		}
+
+		Destroy(gameObject);
 	}
 }
 
