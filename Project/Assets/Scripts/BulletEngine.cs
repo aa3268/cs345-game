@@ -21,7 +21,7 @@ public class BulletEngine : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Asteroids" || col.gameObject.tag == "Entrance")
 		{
-			Destroy (col.gameObject.transform.parent);
+			Destroy (col.gameObject);
 		}
 
 		Destroy(gameObject);

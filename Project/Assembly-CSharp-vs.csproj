@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Move.cs" />
      <Compile Include="Assets\Scripts\BulletEngine.cs" />
      <Compile Include="Assets\Scripts\CalcPoint.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />

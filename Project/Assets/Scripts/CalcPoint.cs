@@ -46,6 +46,10 @@ public class CalcPoint : MonoBehaviour {
 			if(shotCount == 2)
 			{
 				ifinalScore = (10 * ibaseScore) + (itime * 10);
+				if(ifinalScore % 10 == 9)
+				{
+					ifinalScore += 1;
+				}
 				finalScore.text = ifinalScore.ToString();
 
 			}
@@ -54,11 +58,19 @@ public class CalcPoint : MonoBehaviour {
 				if((1 - 0.1 * shotCount) >= 0.1)
 				{
 					ifinalScore = (int)((1 - 0.1 * shotCount) * ibaseScore) + (itime * 10);
+					if(ifinalScore % 10 == 9)
+					{
+						ifinalScore += 1;
+					}
 					finalScore.text = ifinalScore.ToString();
 				}
 				else
 				{
 					ifinalScore = (int)((0.1 * shotCount) * ibaseScore) + (itime * 10);
+					if(ifinalScore % 10 == 9)
+					{
+						ifinalScore += 1;
+					}
 					finalScore.text = ifinalScore.ToString();
 				}
 			}
