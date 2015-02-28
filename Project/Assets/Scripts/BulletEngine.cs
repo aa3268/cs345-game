@@ -22,11 +22,10 @@ public class BulletEngine : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision col)
 	{
-		if (col.gameObject.tag == "Asteroids" || col.gameObject.tag == "Entrance")
+		if (col.gameObject.tag == "Asteroids")
 		{
 			Destroy (col.gameObject);
 		}
-
 		Destroy(gameObject);
 	}
 }
