@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BulletEngine : MonoBehaviour {
 
-	public GameObject particlePrefab;
+	bool visible;
 	public float speed = 10f;
 	private Vector3 forwardMove;
 
@@ -12,7 +12,10 @@ public class BulletEngine : MonoBehaviour {
 
 	}
 	void FixedUpdate () {
-
+		visible = renderer.isVisible;
+		if (!visible) {
+			Destroy(gameObject);
+				}
 		transform.Translate (forwardMove * speed * Time.deltaTime, Space.World);
 
 	

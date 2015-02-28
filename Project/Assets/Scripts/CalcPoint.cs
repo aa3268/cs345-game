@@ -66,7 +66,7 @@ public class CalcPoint : MonoBehaviour {
 				}
 				else
 				{
-					ifinalScore = (int)((0.1 * shotCount) * ibaseScore) + (itime * 10);
+					ifinalScore = (int)((0.1 * ibaseScore) + (itime * 10));
 					if(ifinalScore % 10 == 9)
 					{
 						ifinalScore += 1;
