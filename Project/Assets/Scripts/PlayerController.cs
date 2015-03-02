@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Start()
 	{
+		Time.timeScale = 1;
 		paused = false;
 	}
 	void Update () {
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour {
 			paused = true;
 			main.enabled = false;
 			pause.enabled = true;
+			hud.SetActive(false);
 		}
 		if (paused == true)
 		{

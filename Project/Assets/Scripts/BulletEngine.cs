@@ -26,6 +26,12 @@ public class BulletEngine : MonoBehaviour {
 		{
 			Destroy (col.gameObject);
 		}
+		/*
+		else if(col.gameObject.tag == "Entrance")
+		{
+			Destroy (col.gameObject.transform.parent);
+		}*/
+
 		Destroy(gameObject);
 	}
 }
