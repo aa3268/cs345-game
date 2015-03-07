@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class Menu : MonoBehaviour 
-{
-	public Camera main;
-	public Camera info;
+{	
+	public AudioClip clip;
 
 	public void StartGame()
 	{
@@ -14,9 +13,9 @@ public class Menu : MonoBehaviour
 	{
 		Application.Quit ();
 	}
-	public void Info()
+
+	public void OnMouseEnter()
 	{
-		main.enabled = false;
-		info.enabled = true;
+		audio.PlayOneShot (clip);
 	}
 }

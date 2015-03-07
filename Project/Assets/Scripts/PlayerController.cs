@@ -21,13 +21,13 @@ public class PlayerController : MonoBehaviour {
 
 	void Start()
 	{
-		Time.timeScale = 1;
+		//Time.timeScale = 1;
 		paused = false;
 	}
 	void Update () {
 
 		rotateValue -= Input.GetAxis ("Horizontal") * rotationSpeed * Time.deltaTime;
-		rotateValue = Mathf.Clamp (rotateValue, -35, 35);
+		rotateValue = Mathf.Clamp (rotateValue, -45, 45);
 		transform.localEulerAngles = new Vector3 (0f, 0f,rotateValue);
 		if (Input.GetKeyDown (KeyCode.Escape) && !paused)
 		{

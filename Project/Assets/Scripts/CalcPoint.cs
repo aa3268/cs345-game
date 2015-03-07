@@ -37,13 +37,13 @@ public class CalcPoint : MonoBehaviour {
 		name = GameObject.FindGameObjectWithTag ("Level").gameObject.name;
 		switch(name)
 		{
-			case "Level1(Clone)":
+			case "Level1":
 			range = 5;
 			break;
-			case "Level2(Clone)":
+			case "Level2":
 			range = 5;
 			break;
-			case "Level3(Clone)":
+			case "Level3":
 			range = 7;
 			break;
 		}
@@ -98,8 +98,17 @@ public class CalcPoint : MonoBehaviour {
 						totalScore.text = itotalScore.ToString ();
 				}
 			}
+			if (Application.loadedLevel != 3) {
+				wait();
+				Application.LoadLevel (Application.loadedLevel + 1);
+			}
 			calced = true;
 		}
+	
 
+	}
+	IEnumerator wait()
+	{
+		yield return new WaitForSeconds (3f);
 	}
 }

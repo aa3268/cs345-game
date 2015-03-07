@@ -48,14 +48,17 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BulletEngine.cs" />
      <Compile Include="Assets\Scripts\CalcPoint.cs" />
+     <Compile Include="Assets\Scripts\Enter.cs" />
+     <Compile Include="Assets\Scripts\Info.cs" />
      <Compile Include="Assets\Scripts\Level.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\PauseScript.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Ready.cs" />
      <Compile Include="Assets\Scripts\ShootBullet.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <Compile Include="Assets\Scripts\Timer2.cs" />
-     <Compile Include="Assets\Scripts\WaveManager.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Alper/Downloads/cs345-game-a/Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
