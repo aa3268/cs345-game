@@ -6,7 +6,7 @@ public class Level : MonoBehaviour {
 	public GameObject nextLevel;
 	public int count;
 	public float stop;
-	bool get = false;
+	bool get = true;
 
 	// Update is called once per frame
 	void Update () {

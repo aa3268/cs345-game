@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AsteroidMovement.cs" />
+     <Compile Include="Assets\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\BulletEngine.cs" />
      <Compile Include="Assets\Scripts\CalcPoint.cs" />
      <Compile Include="Assets\Scripts\Enter.cs" />

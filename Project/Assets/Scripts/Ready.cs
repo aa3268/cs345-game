@@ -20,6 +20,7 @@ public class Ready : MonoBehaviour {
 		}
 
 	public void IsReady () {
+		print ("TEST");
 		Time.timeScale = 1;
 		one.enableEmission = true;
 		two.enableEmission = true;
