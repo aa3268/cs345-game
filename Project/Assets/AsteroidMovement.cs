@@ -16,7 +16,7 @@ public class AsteroidMovement : MonoBehaviour {
 		if (rotateClockwise == 1f) {
 			transform.Rotate(0f, 0f, rotateValue * Time.deltaTime);
 		} else {
-			transform.Rotate(0f, 0f, rotateValue * Time.deltaTime);
+			transform.Rotate(0f, 0f, -1 * rotateValue * Time.deltaTime);
 		}
 
 	}
