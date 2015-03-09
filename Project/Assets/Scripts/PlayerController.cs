@@ -3,14 +3,17 @@ using System.Collections;
 
 
 public class PlayerController : MonoBehaviour {
+	public Camera main;
+	public Camera pause;
+	public GameObject hud;
 
 
 	public float rotationSpeed = 80f;
-
+	public int shotCount;
 	private float rotateValue = 0f;
 
 	protected Vector3 move =  Vector3.zero;
-
+	bool paused;
 
 
 
@@ -18,14 +21,29 @@ public class PlayerController : MonoBehaviour {
 
 	void Start()
 	{
-
+		//Time.timeScale = 1;
+		paused = false;
 	}
 	void Update () {
 
 		rotateValue -= Input.GetAxis ("Horizontal") * rotationSpeed * Time.deltaTime;
-		rotateValue = Mathf.Clamp (rotateValue, -30, 30);
+		rotateValue = Mathf.Clamp (rotateValue, -45, 45);
 		transform.localEulerAngles = new Vector3 (0f, 0f,rotateValue);
 
+		if (GameObject.Find ("Starter") == null) 
+		{
+			if (Input.GetKeyDown (KeyCode.Escape) && !paused) {
+				Time.timeScale = 0;
+				paused = true;
+				main.enabled = false;
+				pause.enabled = true;
+				GameObject.Find ("Timer(Clone)").SetActive(false);
+				hud.SetActive (false);
+			}
+			if (paused == true) {
+				paused = false;
+			}
 
+		}
 	}
 }
