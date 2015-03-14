@@ -21,7 +21,7 @@ public class SpaceJunk : MonoBehaviour {
 	void OnCollisionEnter(Collision col)
 	{
 		print("collider");
-		if (col.gameObject.tag == "Exit_Node") {
+		if (col.gameObject.tag == "Teleport_Field") {
 
 			transform.position = new Vector3(entrance_node.transform.position.x ,transform.position.y, transform.position.z);
 		}

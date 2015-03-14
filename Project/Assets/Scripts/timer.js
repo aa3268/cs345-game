@@ -12,10 +12,10 @@
  	{
  		case "Level1":
  			timer = 21;
- 			stop = 5;
+ 			stop = 10;
  		break;
  		case "Level2":
- 			timer = 41;
+ 			timer = 31;
  			stop = 10;
  		break;
  		case "Level3":
@@ -23,15 +23,39 @@
  			stop = 10;
  		break;
  		case "Level4":
- 			timer = 41;
- 			stop = 5;
+ 			timer = 36;
+ 			stop = 10;
  		break;
  		case "Level5":
- 			timer = 41;
+ 			timer = 46;
  			stop = 10;
  		break;
  		case "Level6":
- 			timer = 41;
+ 			timer = 61;
+ 			stop = 10;
+ 		break;
+ 		case "Level7":
+ 			timer = 91;
+ 			stop = 10;
+ 		break;
+ 		case "Level8":
+ 			timer = 101;
+ 			stop = 10;
+ 		break;
+ 		case "Level9":
+ 			timer = 76;
+ 			stop = 10;
+ 		break;
+ 		case "Level10":
+ 			timer = 61;
+ 			stop = 10;
+ 		break;
+ 		case "Level11":
+ 			timer = 71;
+ 			stop = 10;
+ 		break;
+ 		case "Level12":
+ 			timer = 121;
  			stop = 10;
  		break;
  
@@ -59,7 +83,7 @@
 	 {
 	 	gText.text = "Timer";
 	 	
-	 	if (Application.loadedLevel != 7) {
+	 	if (Application.loadedLevel != 13) {
 				Application.LoadLevel (Application.loadedLevel + 1);
 			}
 	 	
