@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b24d124d536af124b92c302695aa10ac
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - projectilePrefab: {fileID: 186954, guid: 4ee8a540eae2d854383b152ae19a5c38, type: 2}
+  - exitCrystal: {instanceID: 0}
+  - explosion: {instanceID: 0}
+  - enter: {instanceID: 0}
+  - exit: {instanceID: 0}
+  - ShotSpawn: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
