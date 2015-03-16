@@ -37,7 +37,6 @@ public class EnterComplete : MonoBehaviour {
 		timer = GameObject.Find ("Timer(Clone)").guiText;
 		asteroids = GameObject.FindGameObjectsWithTag ("Asteroids");
 		size = asteroids.Length;
-		Debug.Log (timer.text.CompareTo ("00") == 0);
 		if (size == 0 || (timer.text.CompareTo("00") == 0)) 
 		{
 			DropDown();

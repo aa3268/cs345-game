@@ -13,7 +13,7 @@ public class Enter : MonoBehaviour {
 	public float enterStop;
 	public float bounceStop;
 	public float fallStop;
-	public float exitStop;
+	float exitStop;
 
 	public bool clicked;
 	public Ready readyCheck;
@@ -25,6 +25,7 @@ public class Enter : MonoBehaviour {
 		done = false;
 		readyCheck = readyCheck.GetComponent<Ready> ();
 		clicked = false;
+		exitStop = -1000;
 	}
 
 	void Update()
