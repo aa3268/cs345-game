@@ -6,7 +6,7 @@ public class Info : MonoBehaviour {
 	public Text range;
 	public Text baseScore;
 	public Text time;
-	public string name;
+	public new string name;
 	public GameObject level;
 	// Use this for initialization
 	void Start () {

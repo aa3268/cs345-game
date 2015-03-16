@@ -9,15 +9,17 @@ public class Ready : MonoBehaviour {
 
 	public GameObject level;
 	public GameObject timer;
+	public bool clicked;
 	void Start()
 	{
+		clicked = false;
 		one.enableEmission = false;
 		two.enableEmission = false;
 		three.enableEmission = false;
 		four.enableEmission = false;
 
-		level.SetActive (false);
-		}
+		//level.SetActive (false);
+	}
 
 	public void IsReady () {
 		Time.timeScale = 1;
@@ -26,9 +28,12 @@ public class Ready : MonoBehaviour {
 		three.enableEmission = true;
 		four.enableEmission = true;
 		
-		level.SetActive (true);
-		Instantiate (timer);
+		//level.SetActive (true);
+		if (!clicked) {
+			Instantiate (timer);
+		}
 
-		Destroy (transform.parent.gameObject);
+		clicked = true;
+		//Destroy (transform.parent.gameObject);
 	}
 }

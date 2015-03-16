@@ -8,6 +8,8 @@ public class PauseScript : MonoBehaviour {
 	{
 
 		Time.timeScale = 1;
+		GameObject.Find ("Time(Clone)").SetActive (true);
+		GameObject.Find ("Quit").SetActive (false);
 		pause.enabled = false;
 		main.enabled = true;
 
@@ -17,6 +19,6 @@ public class PauseScript : MonoBehaviour {
 	{
 		Time.timeScale = 1;
 		Application.LoadLevel (1);
-
 	}
+	
 }

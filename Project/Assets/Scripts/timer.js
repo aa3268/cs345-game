@@ -66,27 +66,20 @@
  	 asd = GameObject.FindGameObjectsWithTag("Asteroids").Length;
 	 if(GameObject.FindGameObjectWithTag("Level").transform.position.y <= stop)
 	 {
-	   timer -= Time.deltaTime;
-	   count = timer;
-	   if(timer >= 0)
-	   {
-	   		gText.text = count.ToString();
-	   	}
-	   	else
-	   	{
-	   		if (Application.loadedLevel != 3) {
-				Application.LoadLevel (Application.loadedLevel + 1);
-			}
+		if(timer >= 0)
+		{
+	   		timer -= Time.deltaTime;
+	   		count = timer;
+	   		if(count >= 10)
+	   		{
+	   			gText.text = count.ToString();
+	   		}
+	   		else
+	   		{
+	   			gText.text = "0" + count.ToString();
+	   			gText.color = Color.red;
+	   		}
+	   			
 	   	}
 	 }
-	 if(asd == 0)
-	 {
-	 	gText.text = "Timer";
-	 	
-	 	if (Application.loadedLevel != 13) {
-				Application.LoadLevel (Application.loadedLevel + 1);
-			}
-	 	
-	 }
-	 
 }

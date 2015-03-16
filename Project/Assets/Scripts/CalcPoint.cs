@@ -22,7 +22,7 @@ public class CalcPoint : MonoBehaviour {
 	public int ifinalScore;
 	public int itotalScore;
 
-	string name;
+	new string name;
 
 	public GameObject player;
 

@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Languages/Unity/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Languages/Unity/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -50,24 +50,28 @@
      <Compile Include="Assets\Scripts\BulletEngine.cs" />
      <Compile Include="Assets\Scripts\CalcPoint.cs" />
      <Compile Include="Assets\Scripts\Enter.cs" />
+     <Compile Include="Assets\Scripts\EnterComplete.cs" />
      <Compile Include="Assets\Scripts\Info.cs" />
+     <Compile Include="Assets\Scripts\InfoButtons.cs" />
      <Compile Include="Assets\Scripts\Level.cs" />
+     <Compile Include="Assets\Scripts\LevelComplete.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\PauseScript.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Ready.cs" />
+     <Compile Include="Assets\Scripts\Scores.cs" />
+     <Compile Include="Assets\Scripts\SelectUser.cs" />
      <Compile Include="Assets\Scripts\ShootBullet.cs" />
      <Compile Include="Assets\Scripts\SpaceJunk.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
-     <Compile Include="Assets\Scripts\Timer2.cs" />
      <Compile Include="Assets\Scripts\ToMain.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Andrew/Documents/Git/cs345-game/Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Alper/Desktop/cs345/cs345-game/Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Languages/Unity/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

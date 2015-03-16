@@ -19,7 +19,7 @@ public class ShootBullet : MonoBehaviour {
 	void Update () {
 	
 		cooldownRemaining -= Time.deltaTime;
-		if (GameObject.Find ("Starter") == null) {
+		if (GameObject.Find ("Starter").transform.position.y < -399 && GameObject.Find ("LevelComplete").transform.position.y > 599) {
 			if (Input.GetKeyDown (KeyCode.Space) && cooldownRemaining <= 0) {
 					counter++;
 					cooldownRemaining = cooldown;

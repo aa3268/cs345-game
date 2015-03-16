@@ -7,6 +7,7 @@ public class BulletEngine : MonoBehaviour {
 	public float speed = 10f;
 	private Vector3 forwardMove;
 	public GameObject explosion;
+	public GameObject sparks;
 	void Start (){
 		forwardMove = transform.up;
 
@@ -27,11 +28,11 @@ public class BulletEngine : MonoBehaviour {
 			Instantiate(explosion, col.transform.position, col.transform.rotation);
 			Destroy (col.gameObject);
 		}
-		/*
-		else if(col.gameObject.tag == "Entrance")
+		else if(col.gameObject.tag == "Junk")
 		{
+			Instantiate(sparks, gameObject.transform.position, gameObject.transform.rotation);
 			Destroy (col.gameObject.transform.parent);
-		}*/
+		}
 
 		Destroy(gameObject);
 	}
